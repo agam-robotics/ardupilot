@@ -33,6 +33,7 @@ More details at [Product Page](https://www.agamrobotics.com/agammegh7).
 - Interfaces
 
   - Full-size MicroSD card slot (Blackbox logging)
+  - 16MB W25Q128 SPI dataflash (assembly option, not fitted on every board)
   - USB-C
   - 9 PWM/DShot outputs (8 motor outputs + 1 LED)
   - 7 UARTs, one with flow control
@@ -476,6 +477,12 @@ The default battery parameters are:
   sensor is attached)
 
 Rated input: 2S-8S LiPo.
+
+## Logging
+
+Logs are written to the microSD card by default. Where the optional W25Q128
+dataflash is fitted, set `LOG_BACKEND_TYPE` to 4 to log to it instead, or 5 to
+log to both.
 
 ## Firmware
 
