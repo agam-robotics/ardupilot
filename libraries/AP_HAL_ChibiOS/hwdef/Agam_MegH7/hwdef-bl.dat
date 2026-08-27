@@ -36,11 +36,11 @@ PA14 JTCK-SWCLK SWD
 # switch is enabled high, so this must match the HIGH used in hwdef.dat.
 PE5 PINIO1 OUTPUT HIGH
 
-PE3 LED_BOOTLOADER OUTPUT LOW
+PE4 LED_BOOTLOADER OUTPUT LOW
 define HAL_LED_ON 0
 
 # hold the red LED off rather than leaving it undefined during DFU
-PE2 LED1 OUTPUT HIGH
+PE3 LED1 OUTPUT HIGH
 
 # Add CS pins to ensure they are high in bootloader
 PD11 IMU1_CS CS
